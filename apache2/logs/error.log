@@ -1,0 +1,7 @@
+PHP Warning:  PHP Startup: Unable to load dynamic library 'E:/game_dev/LEGAL_Games\\php\\ext\\php_curl.dll' - The specified module could not be found.\r\n in Unknown on line 0
+[Tue Oct 21 00:01:01.663487 2025] [mpm_winnt:notice] [pid 15616:tid 756] AH00455: Apache/2.4.29 (Win32) PHP/7.1.11 configured -- resuming normal operations
+[Tue Oct 21 00:01:01.663487 2025] [mpm_winnt:notice] [pid 15616:tid 756] AH00456: Server built: Nov  3 2017 01:01:54
+[Tue Oct 21 00:01:01.663487 2025] [core:notice] [pid 15616:tid 756] AH00094: Command line: 'E:\\game_dev\\LEGAL_Games/apache2/bin/httpd_usbwv8.exe -d E:/game_dev/LEGAL_Games/apache2'
+[Tue Oct 21 00:01:01.667486 2025] [mpm_winnt:notice] [pid 15616:tid 756] AH00418: Parent: Created child process 10008
+PHP Warning:  PHP Startup: Unable to load dynamic library 'E:/game_dev/LEGAL_Games\\php\\ext\\php_curl.dll' - The specified module could not be found.\r\n in Unknown on line 0
+[Tue Oct 21 00:01:02.455823 2025] [mpm_winnt:notice] [pid 10008:tid 724] AH00354: Child: Starting 64 worker threads.

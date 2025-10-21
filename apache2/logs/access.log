@@ -1,0 +1,17 @@
+127.0.0.1 - - [21/Oct/2025:00:01:06 +0200] "GET / HTTP/1.1" 200 6840
+127.0.0.1 - - [21/Oct/2025:00:01:06 +0200] "GET /src/stylesheets/style.css HTTP/1.1" 200 5502
+127.0.0.1 - - [21/Oct/2025:00:01:06 +0200] "GET /src/stylesheets/log-in.css HTTP/1.1" 200 3693
+127.0.0.1 - - [21/Oct/2025:00:01:06 +0200] "GET /src/stylesheets/snake.css HTTP/1.1" 200 1146
+127.0.0.1 - - [21/Oct/2025:00:01:06 +0200] "GET /src/scripts/snake/game.js HTTP/1.1" 200 1079
+127.0.0.1 - - [21/Oct/2025:00:01:06 +0200] "GET /src/images/logo/logo.png HTTP/1.1" 200 4191
+127.0.0.1 - - [21/Oct/2025:00:01:06 +0200] "GET /src/images/log-in/avatar.png HTTP/1.1" 200 9751
+127.0.0.1 - - [21/Oct/2025:00:01:06 +0200] "GET /src/scripts/snake/grid.js HTTP/1.1" 200 401
+127.0.0.1 - - [21/Oct/2025:00:01:06 +0200] "GET /src/scripts/snake/snake.js HTTP/1.1" 200 1435
+127.0.0.1 - - [21/Oct/2025:00:01:06 +0200] "GET /src/scripts/snake/food.js HTTP/1.1" 200 1359
+127.0.0.1 - - [21/Oct/2025:00:01:06 +0200] "GET /src/scripts/snake/input.js HTTP/1.1" 200 1374
+127.0.0.1 - - [21/Oct/2025:00:01:06 +0200] "GET /src/images/logo/L.png HTTP/1.1" 200 6432
+127.0.0.1 - - [21/Oct/2025:00:01:08 +0200] "GET /forum.php HTTP/1.1" 200 16218
+127.0.0.1 - - [21/Oct/2025:00:01:08 +0200] "GET /src/stylesheets/forum.css HTTP/1.1" 200 1940
+127.0.0.1 - - [21/Oct/2025:00:01:10 +0200] "GET /thread.php?40 HTTP/1.1" 200 33447
+127.0.0.1 - - [21/Oct/2025:00:01:11 +0200] "GET /favicon.ico HTTP/1.1" 404 209
+127.0.0.1 - - [21/Oct/2025:00:01:12 +0200] "GET /thread.php?7 HTTP/1.1" 200 33447

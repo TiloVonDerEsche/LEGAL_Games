@@ -1,0 +1,214 @@
+Checking for BNet client credentials: 1 args received
+BDK initialized successfully; reports IsInitialized: 1
+Obtaining geolocation info from BNet server...
+BDK Network Log (Debug): 
+Sending request (1): GET api.bethesda.net/starcore/status
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Body: 
+
+BDK Network Log (Debug): 
+Sending request (3): GET api.bethesda.net/beam/legal_documents/required?platform=WINDOWS&country=US&language=en&format=TXT
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Header: x-src-fp: 81692E8C68D31D9547204ADBA5496D967A4DA9D0
+	Body: 
+
+BDK Network Log (Debug): 
+Sending request (5): GET api.bethesda.net/beam/legal_documents/required?platform=WINDOWS&country=FR&language=fr&format=TXT
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Header: x-src-fp: 81692E8C68D31D9547204ADBA5496D967A4DA9D0
+	Body: 
+
+BDK Network Log (Debug): 
+Sending request (7): GET api.bethesda.net/beam/legal_documents/required?platform=WINDOWS&country=IT&language=it&format=TXT
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Header: x-src-fp: 81692E8C68D31D9547204ADBA5496D967A4DA9D0
+	Body: 
+
+BDK Network Log (Debug): Response received (3): HTTP 200
+
+BDK Network Log (Debug): 	Body (3): {"items":[{"doctype":"ToS","full_name":"ZeniMax Terms of Service 5","id":43,"language":["en"],"url":"https://bethesda.net/data/tos/en.txt"},{"doctype":"PP","full_name":"ZeniMax Privacy Policy 5.0","id":56,"language":["en"],"url":"https://bethesda.net/data/pp/en.txt"},{"doctype":"CoC","full_name":"ZeniMax Code of Conduct 2.0","id":55,"language":["en"],"url":"https://bethesda.net/data/coc/en.txt"}]}
+
+
+BDK Network Log (Debug): 
+Sending request (9): GET api.bethesda.net/beam/legal_documents/required?platform=WINDOWS&country=DE&language=de&format=TXT
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Header: x-src-fp: 81692E8C68D31D9547204ADBA5496D967A4DA9D0
+	Body: 
+
+BDK Network Log (Debug): Response received (1): HTTP 200
+
+BDK Network Log (Debug): 	Body (1): {"platform":{"message":{"status":"ok"}}}
+
+
+BDK Network Log (Debug): 
+Sending request (11): GET api.bethesda.net/beam/legal_documents/required?platform=WINDOWS&country=ES&language=es&format=TXT
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Header: x-src-fp: 81692E8C68D31D9547204ADBA5496D967A4DA9D0
+	Body: 
+
+BDK Network Log (Debug): Response received (7): HTTP 200
+
+BDK Network Log (Debug): 	Body (7): {"items":[{"doctype":"ToS","full_name":"ZeniMax Terms of Service 5","id":43,"language":["it"],"url":"https://bethesda.net/data/tos/it.txt"},{"doctype":"PP","full_name":"ZeniMax Privacy Policy 5.0","id":56,"language":["it"],"url":"https://bethesda.net/data/pp/it.txt"},{"doctype":"CoC","full_name":"ZeniMax Code of Conduct 2.0","id":55,"language":["it"],"url":"https://bethesda.net/data/coc/it.txt"}]}
+
+
+BDK Network Log (Debug): Response received (5): HTTP 200
+
+BDK Network Log (Debug): 	Body (5): {"items":[{"doctype":"ToS","full_name":"ZeniMax Terms of Service 5","id":43,"language":["fr"],"url":"https://bethesda.net/data/tos/fr.txt"},{"doctype":"PP","full_name":"ZeniMax Privacy Policy 5.0","id":56,"language":["fr"],"url":"https://bethesda.net/data/pp/fr.txt"},{"doctype":"CoC","full_name":"ZeniMax Code of Conduct 2.0","id":55,"language":["fr"],"url":"https://bethesda.net/data/coc/fr.txt"}]}
+
+
+BDK Network Log (Debug): Response received (9): HTTP 200
+
+BDK Network Log (Debug): 	Body (9): {"items":[{"doctype":"ToS","full_name":"ZeniMax Terms of Service 5","id":43,"language":["de"],"url":"https://bethesda.net/data/tos/de.txt"},{"doctype":"PP","full_name":"ZeniMax Privacy Policy 5.0","id":56,"language":["de"],"url":"https://bethesda.net/data/pp/de.txt"},{"doctype":"CoC","full_name":"ZeniMax Code of Conduct 2.0","id":55,"language":["de"],"url":"https://bethesda.net/data/coc/de.txt"}]}
+
+
+BDK Network Log (Debug): Response received (11): HTTP 200
+
+BDK Network Log (Debug): 	Body (11): {"items":[{"doctype":"ToS","full_name":"ZeniMax Terms of Service 5","id":43,"language":["es"],"url":"https://bethesda.net/data/tos/es.txt"},{"doctype":"PP","full_name":"ZeniMax Privacy Policy 5.0","id":56,"language":["es"],"url":"https://bethesda.net/data/pp/es.txt"},{"doctype":"CoC","full_name":"ZeniMax Code of Conduct 2.0","id":55,"language":["es"],"url":"https://bethesda.net/data/coc/es.txt"}]}
+
+
+Successfully obtained geolocation: DE
+BDK Network Log (Debug): 
+Sending request (12): POST api.bethesda.net/log/v3/collect_logdata?signature_hash=ZWVlYTc1N2MxODcyNmQ0MzkwMjcyNzhjYWNjMGU5MTg0N2E1YjVkNw%3D%3D;product_id=616
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Header: Content-Type: application/json
+	Body: { "product_id": 616, "event_type": "game_start", "environment": "live", "logdata": { "header": { "event_type": "game_start", "product_id": 616, "environment": "prod", "platform_id": 10, "game_version": "4.1.49", "player_ip": null, "server_ip": null, "server_source": null, "server_version": null, "timestamp": 1632742187, "timestamp_ms": 470358, "session_id": "2cb414f9-fdb7-48b1-815a-2a20c43efe7d", "bdk_version": "1.0020.00000"} , "payload": { "persistent_uuid": null, "buid": null, "start_reason": 1} } } 
+
+BDK Network Log (Debug): Response received (12): HTTP 200
+
+BDK Network Log (Debug): 	Body (12): {"code":2000,"message":"success"}
+
+
+BDK Network Log (Debug): 
+Sending request (14): POST api.bethesda.net/log/v3/collect_logdata?signature_hash=ZmM2ODI2YjIxOTg2NDRlMThlZmVhNTc0NDU4NGI1NDAwYzI4NzRiZQ%3D%3D;product_id=616
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Header: Content-Type: application/json
+	Body: { "product_id": 616, "event_type": "game_stop", "environment": "live", "logdata": { "header": { "event_type": "game_stop", "product_id": 616, "environment": "prod", "platform_id": 10, "game_version": "4.1.49", "player_ip": null, "server_ip": null, "server_source": null, "server_version": null, "timestamp": 1632742196, "timestamp_ms": 273467, "session_id": "2cb414f9-fdb7-48b1-815a-2a20c43efe7d", "bdk_version": "1.0020.00000"} , "payload": { "persistent_uuid": null, "buid": null, "stop_reason": 1} } } 
+
+kexSocialSignInBNet::TryResumeSession: Serialized token is not for a master account, deferring to full login
+BDK Network Log (Debug): Response received (14): HTTP 200
+
+BDK Network Log (Debug): 	Body (14): {"code":2000,"message":"success"}
+
+
+BDK Network Log (Debug): 
+Sending request (15): POST api.bethesda.net/log/v3/collect_logdata?signature_hash=MjcyZjA0ZDJhYTk3YTY5MWQyZjFmYzM3YzExNmY4MTFjZmQzMDRiYw%3D%3D;product_id=616
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Header: Content-Type: application/json
+	Body: { "product_id": 616, "event_type": "game_start", "environment": "live", "logdata": { "header": { "event_type": "game_start", "product_id": 616, "environment": "prod", "platform_id": 10, "game_version": "4.1.49", "player_ip": null, "server_ip": null, "server_source": null, "server_version": null, "timestamp": 1632742196, "timestamp_ms": 273504, "session_id": "a1d96139-5a08-4a48-9a53-d926a4360287", "bdk_version": "1.0020.00000"} , "payload": { "persistent_uuid": "d05c7e20-3d2f-4d4b-8326-289809756695", "buid": null, "start_reason": 1} } } 
+
+kexSocialSignInBNet::RequestUserSignInGameAcct: Proceeding with BNet game account external authentication
+BDK Network Log (Debug): 
+Sending request (17): POST api.bethesda.net/session/game-account/external-login
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Header: x-src-fp: 81692E8C68D31D9547204ADBA5496D967A4DA9D0
+	Header: Content-Type: application/json
+	Header: X-Platform: WINDOWS
+	Body: { "scheme": "steam", "token": "0801109efeccbc041804203e2a7051abf8644b1069d098577e2840ab6cc9602d6918775d7c46aa3814e01253d66d649665ed31fda92d3fb0739d0e2f898fb7e108100663c4d97395768a0cd15abcc5f06f6b0fa6e8bce272d8b9c30fffffe0a218921a67a396153fcdb6e29ae822bb300449f45eb6808e757717949aea7a", "client_id": "d788b787-4c05-47b4-9de2-374dd728a284", "language": "de"} 
+
+BDK Network Log (Debug): Response received (15): HTTP 200
+
+BDK Network Log (Debug): 	Body (15): {"code":2000,"message":"success"}
+
+
+kexSocialSignInBNet::StartNewGameSession: Successfully started new game session
+BDK Network Log (Debug): Response received (17): HTTP 200
+
+BDK Network Log (Debug): 	Body (17): {"platform":{"message":"success","code":2000,"response":{"username":"8e61578f248c4cbea123","refresh_time":1632745797,"application_id":"75621280-d865-4130-8795-a6eb556705f2","session_type":"basic","external_account":{"external_platform":"steam","external_username":"᲼᲼᲼","external_secondary_id":"76561198200032597","external_account_id":"76561193905065301"},"buid":"8e61578f-248c-4cbe-a123-ca395c67b87c","time_to_refresh":3600,"session_token":"eyJhbGciOiJFUzI1NiIsImtpZCI6IjYiLCJ0eXAiOiJKV1QifQ.eyJsaW1pdGVkIjp0cnVlLCJsYXN0X25hbWUiOm51bGwsImFwcGxpY2F0aW9uX2lkIjoiNzU2MjEyODAtZDg2NS00MTMwLTg3OTUtYTZlYjU1NjcwNWYyIiwidGhpcmRfcGFydHlfbWFya2V0aW5nX29wdF9pbiI6bnVsbCwiZ2VuZXJhdGVkX3VzZXJuYW1lIjp0cnVlLCJjb3BwYV9jb21wbGlhbnQiOmZhbHNlLCJsb2dpbl91c2VybmFtZSI6IjhlNjE1NzhmMjQ4YzRjYmVhMTIzIiwiZW1haWxfYWRkcmVzcyI6IjhlNjE1NzhmMjQ4YzRjYmVhMTIzY2EzOTVjNjdiODdjIiwiaWQiOiI4ZTYxNTc4Zi0yNDhjLTRjYmUtYTEyMy1jYTM5NWM2N2I4N2MiLCJmaXJzdF9uYW1lIjpudWxsLCJ2ZXJpZmllZCI6dHJ1ZSwic3ViIjoiOGU2MTU3OGYtMjQ4Yy00Y2JlLWExMjMtY2EzOTVjNjdiODdjIiwiYWNjb3VudF9zdGF0ZSI6IkxJTktFRF9BTk9OWU1PVVMiLCJpYXQiOjE2MzI3NDIxOTcsIm5vbmNlIjoiNDE4NzE5YjYtNTIyMS00NDZmLTg4YmQtY2UwYzhmMDRiZTg5IiwiZXhwIjoxNjMyNzQ5Mzk3LCJzZWNyZXRfMl9xdWVzdGlvbiI6bnVsbCwiZXh0ZXJuYWxfYWNjb3VudCI6eyJleHRlcm5hbF9wbGF0Zm9ybSI6InN0ZWFtIiwiZXh0ZXJuYWxfdXNlcm5hbWUiOiLhsrzhsrzhsrwiLCJleHRlcm5hbF9zZWNvbmRhcnlfaWQiOiI3NjU2MTE5ODIwMDAzMjU5NyIsImV4dGVybmFsX2FjY291bnRfaWQiOiI3NjU2MTE5MzkwNTA2NTMwMSJ9LCJuZXdzX29mZmVyc19vcHRfaW4iOmZhbHNlLCJzY29wZSI6ImJhc2ljIiwib3RwX2Rpc2FibGVkIjpmYWxzZSwicmVmcmVzaF90b2tlbiI6Ijc2ZGIxYTY4LWFhYzEtNGVhOC1iMjE1LTQzMWIzZjkzYjYzYiIsImF1ZCI6ImQ3ODhiNzg3LTRjMDUtNDdiNC05ZGUyLTM3NGRkNzI4YTI4NCIsImxhbmd1YWdlIjoiZW4iLCJyb2xlcyI6W10sImlzcyI6Imh0dHBzOi8vYXBpLmJldGhlc2RhLm5ldC8iLCJjb3VudHJ5IjoiREUiLCJzZXNzaW9uX2lkIjoiNDE4NzE5YjYtNTIyMS00NDZmLTg4YmQtY2UwYzhmMDRiZTg5IiwidXNlcm5hbWUiOiI4ZTYxNTc4ZjI0OGM0Y2JlYTEyMyIsInN0YXR1cyI6eyJhY2NvdW50X3R5cGUiOiJsaW1pdGVkIiwibWlzc2luZ19sZWdhbF9kb2N1bWVudHMiOmZhbHNlLCJuZWVkc19kZXZpY2VfdmVyaWZpY2F0aW9uIjpmYWxzZSwib3V0c2lkZ
+
+BDK Memory Log (Warning): FixedString Warning: FixedString size exceeded original capacity, memory will be allocated
+Add BNET_FIXED_STRING_ASSERTS preprocessor flag to trigger assert.
+
+BDK Network Log (Debug): 
+Sending request (19): POST api.bethesda.net/log/v3/collect_logdata?signature_hash=MGRmNzAwYTYyZTdlYzY4ODFmYmIyOWI1ZjYyZWYxYTNjMjFkNDlmNg%3D%3D;product_id=616
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Header: Content-Type: application/json
+	Body: { "product_id": 616, "event_type": "login", "environment": "live", "logdata": { "header": { "event_type": "login", "product_id": 616, "environment": "prod", "platform_id": 10, "game_version": "4.1.49", "player_ip": null, "server_ip": null, "server_source": null, "server_version": null, "timestamp": 1632742197, "timestamp_ms": 155053, "session_id": "a1d96139-5a08-4a48-9a53-d926a4360287", "bdk_version": "1.0020.00000"} , "payload": { "persistent_uuid": "d05c7e20-3d2f-4d4b-8326-289809756695", "buid": "8e61578f-248c-4cbe-a123-ca395c67b87c"} } } 
+
+BDK Network Log (Debug): 
+Sending request (18): GET api.bethesda.net/session/get-login-token
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Header: x-src-fp: 81692E8C68D31D9547204ADBA5496D967A4DA9D0
+	Header: X-Session-Token: eyJhbGci...
+	Body: 
+
+BDK Network Log (Debug): Response received (18): HTTP 200
+
+BDK Network Log (Debug): 	Body (18): {"platform":{"message":"success","code":2000,"response":"3c67feb5-7111-4438-a7a8-f3dd31942cdc"}}
+
+kexSocialSignInBNet::OnUserAuthenticatedGameAcct: Authentication successful
+kexSocialSignInBNet::PostSuccessfulLogin: Setting user login resume token
+kexSocialSignInBNet::GetAccountInfo: Obtaining user account information
+BDK Memory Log (Warning): FixedString Warning: FixedString size exceeded original capacity, memory will be allocated
+Add BNET_FIXED_STRING_ASSERTS preprocessor flag to trigger assert.
+
+BDK Memory Log (Warning): FixedString Warning: FixedString size exceeded original capacity, memory will be allocated
+Add BNET_FIXED_STRING_ASSERTS preprocessor flag to trigger assert.
+
+BDK Network Log (Debug): 
+Sending request (21): GET api.bethesda.net/gsp/v1/achievements/all/8e61578f-248c-4cbe-a123-ca395c67b87c
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Header: X-Session-Token: eyJhbGci...
+	Body: 
+
+BDK Network Log (Debug): 
+Sending request (20): GET api.bethesda.net/beam/accounts/me
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Header: x-src-fp: 81692E8C68D31D9547204ADBA5496D967A4DA9D0
+	Header: X-Session-Token: eyJhbGci...
+	Body: 
+
+BDK Network Log (Debug): 
+Sending request (22): GET api.bethesda.net/cms/v2/message?limit=10;page=1
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Header: accept-language: de
+	Body: 
+
+BDK Network Log (Debug): Response received (19): HTTP 200
+
+BDK Network Log (Debug): 	Body (19): {"code":2000,"message":"success"}
+
+
+BDK Network Log (Debug): Response received (21): HTTP 200
+
+BDK Network Log (Debug): 	Body (21): [{"id": null, "updated_at": null, "created_at": null, "buid": "8e61578f-248c-4cbe-a123-ca395c67b87c", "data_source_id": "8e61578f-248c-4cbe-a123-ca395c67b87c", "data_source_type_slug": null, "achievement_id": "unholy-firepower", "progress": 0, "progress_percent": 0.0, "awarded": false, "times_awarded": 0, "achievement": {"id": "unholy-firepower", "created_at": "2019-11-08T19:50:32+0000", "updated_at": "2019-11-08T19:50:32+0000", "name": "Unholy Firepower", "slug": "unholy-firepower", "tagline": "Find the Unmaker", "description": "", "awards_account_points": true, "points": 75, "stat_source": "profile", "source_type_slug": null, "tracked_stat": "data.unmaker_found", "repeatable": false, "use_deltas": false, "threshold": 1, "achievement_image_identifier": null, "is_time_limited": false, "start_at": null, "end_at": null, "data": {}}}, {"id": null, "updated_at": null, "created_at": null, "buid": "8e61578f-248c-4cbe-a123-ca395c67b87c", "data_source_id": "8e61578f-248c-4cbe-a123-ca395c67b87c", "data_source_type_slug": null, "achievement_id": "rvnh3ct1cd3m0", "progress": 0, "progress_percent": 0.0, "awarded": false, "times_awarded": 0, "achievement": {"id": "rvnh3ct1cd3m0", "created_at": "2019-11-08T19:50:59+0000", "updated_at": "2019-11-08T19:50:59+0000", "name": "RVNH3CT1CD3M0???", "slug": "rvnh3ct1cd3m0", "tagline": "Locate the secret level \"Hectic\"", "description": "", "awards_account_points": true, "points": 100, "stat_source": "profile", "source_type_slug": null, "tracked_stat": "data.hectic_found", "repeatable": false, "use_deltas": false, "threshold": 1, "achievement_image_identifier": null, "is_time_limited": false, "start_at": null, "end_at": null, "data": {}}}, {"id": null, "updated_at": null, "created_at": null, "buid": "8e61578f-248c-4cbe-a123-ca395c67b87c", "data_source_id": "8e61578f-248c-4cbe-a123-ca395c67b87c", "data_source_type_slug": null, "achievement_id": "my-cause-is-just", "progress": 0, "progress_percent": 0.0, "awarded": false, "times_awarded": 0, "achiev
+
+BDK Network Log (Debug): Response received (22): HTTP 200
+
+BDK Network Log (Debug): 	Body (22): {"platform": {"code": 2000, "message": "success", "response": {"language": "de", "game_name": "Doom 64", "game_uuid": "07ad38a29676f5a70aed899cadfe59bfee0eb07a", "entries": [{"ctime": "2019-09-11T18:23:09+00:00", "utime": "2019-10-10T12:42:35+00:00", "version": 4, "message_id": "4d043gm7B1vp2ZpJFyngis", "entry_title": "Launch MOTD", "title": "Willkommen zu DOOM 64!", "body": "Willkommen zu DOOM 64! Der 64-Bit-Kultklassiker kehrt nach 22 Jahren wieder zurück. Im Nachfolger zu DOOM II bekämpfst du auf der Suche nach der Mother of Demons die Armeen der Hölle und hältst in mehr als 30 actionreichen Leveln die Invasion der Hölle auf!", "images": [{"title": "64 screenshot", "file": {"url": "https://images.ctfassets.net/81fe8x908gfi/5Z5hMGfEYjyyMOEHcUHL6e/86254e85cea642dccffd25b439fb5c41/DOOM_64_Screenshot__1_.png", "details": {"size": 3140010, "image": {"width": 1920, "height": 1080}}, "fileName": "DOOM_64 Screenshot (1).png", "contentType": "image/png"}}], "platform": ["ALL"]}], "page": 1, "from": 1, "to": 1, "size": 1, "total": 1}}}
+
+BDK Memory Log (Warning): FixedString Warning: FixedString size exceeded original capacity, memory will be allocated
+Add BNET_FIXED_STRING_ASSERTS preprocessor flag to trigger assert.
+
+BDK Network Log (Debug): Response received (20): HTTP 200
+
+BDK Network Log (Debug): 	Body (20): {"account":{"account_state":"LINKED_ANONYMOUS","admin":false,"admin_read_only":false,"authentications":{"bethesda":{"service_account_id":"2f567384f6bc483fbd7757521ff8800c","service_email":"mipslp21@gmail.com","service_identity_url":null,"service_secondary_id":null,"service_username":"8f746d842bf04d7f8c97"},"steam":{"service_account_id":"76561193905065301","service_email":null,"service_identity_url":null,"service_secondary_id":"76561198200032597","service_username":"\u1cbc\u1cbc\u1cbc"}},"avatar":null,"country":"DE","created":"2021-08-24T02:06:18.158133+00:00","disabled":false,"disabled_code":null,"disabled_expiration":null,"document_acceptances":[],"email_address":"8e61578f248c4cbea123ca395c67b87c","fingerprints":[],"first_name":null,"generated_username":true,"id":"8e61578f-248c-4cbe-a123-ca395c67b87c","language":"en","last_name":null,"limited":true,"location":null,"login_username":"8e61578f248c4cbea123","merge_target":"2f567384-f6bc-483f-bd77-57521ff8800c","merged":true,"mfa_enabled":false,"motto":null,"news_offers_opt_in":false,"opt_outs":[],"otp_disabled":false,"roles":[],"secret_1_question":null,"secret_2_question":null,"sms_enabled_number":null,"status":{"account_type":"limited","missing_legal_documents":false,"needs_device_verification":false,"outside_grace_period":false,"verified":true},"third_party_marketing_opt_in":null,"updated":"2021-08-24T02:06:18.196276+00:00","username":"8e61578f248c4cbea123","verified":true}}
+
+
+kexSocialSignInBNet::GetAccountInfo (lambda): Got account information successfully
+BDK Network Log (Debug): 
+Sending request (23): POST api.bethesda.net/log/v3/collect_logdata?signature_hash=OTRiZDhhMzRkMTA0Zjc3NzIwNWJhNjdiM2QxN2Q2MjRlMDBkNGUwNQ%3D%3D;product_id=616
+	Header: X-BNET-Agent: DOOM 64;4.1.49;BDK;1.0020.00000;WINDOWS
+	Header: X-BNET-Key: d2VKYlx2...
+	Header: Content-Type: application/json
+	Body: { "product_id": 616, "event_type": "game_heartbeat", "environment": "live", "logdata": { "header": { "event_type": "game_heartbeat", "product_id": 616, "environment": "prod", "platform_id": 10, "game_version": "4.1.49", "player_ip": null, "server_ip": null, "server_source": null, "server_version": null, "timestamp": 1632743023, "timestamp_ms": 402967, "session_id": "a1d96139-5a08-4a48-9a53-d926a4360287", "bdk_version": "1.0020.00000"} , "payload": { "persistent_uuid": "d05c7e20-3d2f-4d4b-8326-289809756695", "buid": "8e61578f-248c-4cbe-a123-ca395c67b87c", "interval": 900000, "heartbeat_type": 1} } } 
+
+BDK Network Log (Debug): Response received (23): HTTP 200
+
+BDK Network Log (Debug): 	Body (23): {"code":2000,"message":"success"}
+
+

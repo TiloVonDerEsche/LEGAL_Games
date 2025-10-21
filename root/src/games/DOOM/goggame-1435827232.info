@@ -1,0 +1,75 @@
+{
+    "buildId": "52095434166158492",
+    "clientId": "51260250425244911",
+    "gameId": "1435827232",
+    "language": "English",
+    "languages": [
+        "en-US"
+    ],
+    "name": "The Ultimate DOOM",
+    "playTasks": [
+        {
+            "arguments": "-conf \"..\\dosbox_doom.conf\" -conf \"..\\dosbox_doom_single.conf\" -noconsole -c \"exit\"",
+            "category": "game",
+            "isPrimary": true,
+            "languages": [
+                "*"
+            ],
+            "name": "The Ultimate DOOM",
+            "path": "DOSBOX\\dosbox.exe",
+            "type": "FileTask",
+            "workingDir": "DOSBOX"
+        },
+        {
+            "arguments": "1435827232",
+            "category": "tool",
+            "languages": [
+                "*"
+            ],
+            "name": "Graphic Mode Setup",
+            "path": "DOSBOX\\GOGDOSConfig.exe",
+            "type": "FileTask",
+            "workingDir": "DOSBOX"
+        },
+        {
+            "category": "document",
+            "languages": [
+                "*"
+            ],
+            "link": "http://www.gog.com/support/the_ultimate_doom",
+            "name": "Support",
+            "type": "URLTask"
+        },
+        {
+            "arguments": "1435827232 NET",
+            "category": "tool",
+            "languages": [
+                "*"
+            ],
+            "name": "Run Multiplayer Game",
+            "path": "DOSBOX\\GOGDOSConfig.exe",
+            "type": "FileTask",
+            "workingDir": "DOSBOX"
+        },
+        {
+            "category": "document",
+            "languages": [
+                "*"
+            ],
+            "name": "Manual",
+            "path": "Manual.pdf",
+            "type": "FileTask"
+        },
+        {
+            "category": "document",
+            "languages": [
+                "*"
+            ],
+            "name": "DOOM Bible",
+            "path": "Doom Bible.pdf",
+            "type": "FileTask"
+        }
+    ],
+    "rootGameId": "1435827232",
+    "version": 1
+}
