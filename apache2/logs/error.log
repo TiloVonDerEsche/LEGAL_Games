@@ -5,3 +5,5 @@ PHP Warning:  PHP Startup: Unable to load dynamic library 'E:/game_dev/LEGAL_Gam
 [Tue Oct 21 00:01:01.667486 2025] [mpm_winnt:notice] [pid 15616:tid 756] AH00418: Parent: Created child process 10008
 PHP Warning:  PHP Startup: Unable to load dynamic library 'E:/game_dev/LEGAL_Games\\php\\ext\\php_curl.dll' - The specified module could not be found.\r\n in Unknown on line 0
 [Tue Oct 21 00:01:02.455823 2025] [mpm_winnt:notice] [pid 10008:tid 724] AH00354: Child: Starting 64 worker threads.
+[Tue Oct 21 02:43:38.430297 2025] [php7:notice] [pid 10008:tid 1232] [client 127.0.0.1:58893] PHP Notice:  Undefined index: keyword in E:\\game_dev\\LEGAL_Games\\root\\search_structure.php on line 29, referer: http://localhost/forum.php
+[Tue Oct 21 02:49:03.128520 2025] [php7:notice] [pid 10008:tid 1228] [client 127.0.0.1:58991] PHP Notice:  Undefined index: keyword in E:\\game_dev\\LEGAL_Games\\root\\search_structure.php on line 29, referer: http://localhost/forum.php
