@@ -1,2 +1,7 @@
 /!Backup/
-/apache2/logs/
+/apache2
+/lang
+/mysql
+/php
+/phpmyadmin
+/settings
