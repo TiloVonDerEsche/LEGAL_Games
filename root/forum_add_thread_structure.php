@@ -30,7 +30,7 @@
 
         <div class="addCommentAuthor">
             <br> <label> Enter the date here: </label> <br> <!-- Name of the author here -->
-            <input type="text" name="threadDate"><br> 
+            <input type="date" name="threadDate"><br> 
         </div>
     
         <div class="addCommentAuthor">
