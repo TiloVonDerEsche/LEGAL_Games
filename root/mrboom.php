@@ -1,17 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>LEGAL_Games</title>
-		<link rel="icon" href="src/images/logo/L.png" type="image" sizes="16x16">
-    </head>
-    <body>
-        <?php
-        include("modules.php");
-        include("mrboom_game.php"); //definierender Part der Website immer in der mittleren PHP Datei
-        include("footer.php");
-        ?>
-    </body>
-</html>
+<?php
+include("header.php");
+?>
+
+
+    <style type="text/css">
+    .dosbox-container { width: 640px; height: 400px; margin: auto; margin-top: 15vmax;}
+    .dosbox-container > .dosbox-overlay { background: url("src/images/games/mrboom30.png"); }
+    .FullscreenBtn {margin-left: 33vmax;}
+    .startDOSboxHref {margin-top: 20vmax; margin-left: 45vmax;}
+
+
+    </style>
+
+    <div id="dosbox"></div>
+    <br/>
+    <button class="FullscreenBtn" onclick="dosbox.requestFullScreen();">Make fullscreen</button>
+
+    <script type="text/javascript" src="https://js-dos.com/cdn/js-dos-api.js"></script>
+    <script type="text/javascript">
+        var dosbox = new Dosbox({
+            id: "dosbox",
+            onload: function (dosbox) {
+            dosbox.run("src/games/MRBOOM30.zip", "MRBOOM30.EXE");
+            },
+            onrun: function (dosbox, app) {
+            console.log("App '" + app + "' is runned");
+            }
+        });
+    </script>
+
+<?php
+include("footer.php");
+?>
+

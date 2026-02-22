@@ -18,7 +18,7 @@
 						<a href="tetris.php">Tetris</a>
 						<a href="doom.php">DOOM</a>
 						<a href="mrboom.php">MrBoom30</a>
-						<a href="games.php">Other</a>
+						<a href="game_list.php">Other</a>
 					</div>
 				</div>
 				<a href="videos.php">Videos</a>

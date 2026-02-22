@@ -1,18 +1,54 @@
-<!--readme.php refers to the readme page and isn't meant to be read itself-->
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>LEGAL_Readme</title>
-		<link rel="icon" href="src/images/logo/L.png" type="image" sizes="16x16">
-    </head>
-    <body>
-        <?php
-        include("modules.php");
-        include("readme_structure.php"); //definierender Part der Website immer in der mittleren PHP Datei
-        include("footer.php");
-        ?>
-    </body>
-</html>
+<?php
+include("header.php");
+?>
+
+<!----------------------------------------------------------
+-					  Readme						
+----------------------------------------------------------->
+<link rel="stylesheet" href="src/stylesheets/forum.css">                 <!-- Externe CSS zum stylen der Seite und ihrer Einträge-->
+
+<div class="top-bar">
+    <h1>
+        LEGAL_Readme
+    </h1>
+</div>
+
+<div class="main">
+
+    <div class="changelog-list">
+        <article>
+            ------------------------------------------- <br>
+            -		!WICHTIG! <br>
+            -------------------------------------------- <br>
+            Meine selbst geschriebenen Dateien befinden sich im Verzeichnis "LEGAL_Games\root\" <br>
+            <br>
+            Um die PHP Dateien zu öffnen gehen Sie zu USBWebServer.exe und starten Sie sie. Anschließend klicken Sie auf localhost um <br>
+            den Server zu starten. WICHTIG: SIE KÖNNEN MEINE WEBSEITE NUR ÜBER DEN SERVER BETRACHTEN DA ES PHP DATEIEN SIND <br>
+            <br>
+            Zum Bearbeiten kann man die PHP Dateien, die in root lokalisiert sind, ganz normal mit jeder API öffnen <br>
+            ------------------------------------------- <br>
+            -                /!WICHTIG! <br>
+            -------------------------------------------- <br>
+            <br> 
+            Password for the Database: nAsPh3PjvMFbNt58 <br>
+            <br>
+            Falls Sie meine Datenbank inspizieren möchten öffnen Sie USBWebserver.exe und klicken sie auf PHPMyAdmin.<br>
+            (Gegebenenfalls müssen Sie im rechten Reiter auf Apache und Mysql klicken und jeweils links im Fenster auf den grünen START <br>
+            Button drücken). Das Passwort habe ich nicht verändert; Es steht unter dem Log in bei Default USBWebserver settings.<br>
+            (Username: root, Password: usbw) Letztlich klicken Sie im linken Reiter auf die "forum" Datenbank und danach auf "thread1". <br>
+            Nun sollten Sie eine Tabelle mit allen geschriebenen Kommentaren sehen. Wenn Sie auf der Website im Forum in einem Thread ein<br>
+            Kommentar schreiben, wird dieses zur Datenbank hinzugefügt (,da diese aber noch über localhost läuft, sieht man nur die lokal<br>
+            geschriebenen Kommentare).<br>
+            <br>
+           
+
+            Tilo von Eschwege
+        </article>
+    </div>
+</div>
+
+<?php
+include("footer.php");
+?>
+
+    

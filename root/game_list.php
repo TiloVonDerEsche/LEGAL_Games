@@ -1,32 +1,40 @@
-	<!--Die Spieleliste ist ein image grid, wobei jedes image einen Link zu dem zugehörigen Spiel darstellt-->
-	<!----------------------------------------------------------
-	-					     Spieleliste
-	----------------------------------------------------------->
-	<div class="header">
-		<h1>Choose a game to your liking</h1>
-	</div>
+<?php
+include("header.php");
+?>
 
-	<div class="row">   <!--linke Spalte des Grids-->
-		<div class="column">
-			<div class="container"> <!--Der Container für das Bild und den Text des Spiels-->
-				<a href="snake.php"><img src="src/images/games/snake0.png"></a> <!-- Link zum Spiel und Bild des Spiels-->
-				<div class="gametext">Snek</div>
-			</div>
-			<div class="container"> <!--Der Container für das Bild und den Text des Spiels-->
-				<a href="tetris.php"><img src="src/images/games/tetris0.png"></a> <!-- Link zum Spiel und Bild des Spiels-->
-				<div class="gametext">Attack of the Tetrominoes</div>
-			</div>
+<!--Die Spieleliste ist ein image grid, wobei jedes image einen Link zu dem zugehörigen Spiel darstellt-->
+<!----------------------------------------------------------
+-					     Spieleliste
+----------------------------------------------------------->
+<div class="header">
+	<h1>Choose a game to your liking</h1>
+</div>
 
-
+<div class="row">   <!--linke Spalte des Grids-->
+	<div class="column">
+		<div class="container"> <!--Der Container für das Bild und den Text des Spiels-->
+			<a href="snake.php"><img src="src/images/games/snake0.png"></a> <!-- Link zum Spiel und Bild des Spiels-->
+			<div class="gametext">Snek</div>
 		</div>
-		<div class="column">  <!--rechte Spalte des Grids-->
-			<div class="container"> <!--Der Container für das Bild und den Text des Spiels-->
-				<a href="doom.php"><img src="src/images/games/DOOM.png" width="225" height="140.625"></a> <!-- Link zum Spiel und Bild des Spiels-->
-				<div class="gametext">DOOM</div>
-			</div>
-			<div class="container"> <!--Der Container für das Bild und den Text des Spiels-->
-				<a href="mrboom.php"><img src="src/images/games/mrboom30.png" width="225" height="140.625"></a> <!-- Link zum Spiel und Bild des Spiels-->
-				<div class="gametext">MrBoom30</div>
-			</div>
+		<div class="container"> <!--Der Container für das Bild und den Text des Spiels-->
+			<a href="tetris.php"><img src="src/images/games/tetris0.png"></a> <!-- Link zum Spiel und Bild des Spiels-->
+			<div class="gametext">Attack of the Tetrominoes</div>
+		</div>
+
+
+	</div>
+	<div class="column">  <!--rechte Spalte des Grids-->
+		<div class="container"> <!--Der Container für das Bild und den Text des Spiels-->
+			<a href="doom.php"><img src="src/images/games/DOOM.png" width="225" height="140.625"></a> <!-- Link zum Spiel und Bild des Spiels-->
+			<div class="gametext">DOOM</div>
+		</div>
+		<div class="container"> <!--Der Container für das Bild und den Text des Spiels-->
+			<a href="mrboom.php"><img src="src/images/games/mrboom30.png" width="225" height="140.625"></a> <!-- Link zum Spiel und Bild des Spiels-->
+			<div class="gametext">MrBoom30</div>
 		</div>
 	</div>
+</div>
+
+<?php
+include("footer.php");
+?>
