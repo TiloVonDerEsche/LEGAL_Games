@@ -11,7 +11,8 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
-    echo "ThreadID: " . $row["id"] . " - Title: " . $row["title"]. " Content: " . $row["content"]. " " . $row["author"]. " ".$row["cdate"]."<br>";
+    echo "ThreadID: " . $row["id"] . " - Title: " . $row["title"]. "
+    Content: " . $row["content"]. " " . $row["author"]. " ".$row["timestmp"]."<br>";
   }
 } else {
   echo "0 results";

@@ -7,7 +7,7 @@ CREATE TABLE threads (
     title VARCHAR(255) NOT NULL,
     content TEXT NOT NULL,
     author VARCHAR(100) NOT NULL,
-    cdate DATE NOT NULL, 
+    timestmp DATETIME DEFAULT CURRENT_TIMESTAMP, 
     comment_count INT DEFAULT 0
 );
 
@@ -17,7 +17,7 @@ CREATE TABLE comments (
     thread_id INT NOT NULL,
     content TEXT NOT NULL,
     author VARCHAR(100) NOT NULL,
-    cdate DATE NOT NULL, -- BIGINT before
+    timestmp DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (thread_id) REFERENCES threads(id) ON DELETE CASCADE
 );
 

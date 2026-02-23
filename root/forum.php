@@ -33,12 +33,12 @@ include("header.php");
             echo "
                 <li class='forumRow'>
                     <div class='thread-itself'>
-                        <a href='thread.php?t_id=".$row['id']."'>          
+                        <a href='thread.php?t_id=".$row['id']."'>
                             <h4 class='title'>
                                 ". $row['title']."
                             </h4>
                             <p class='t-description'>
-                                by ". $row['author']." ". $row['cdate']." ". $row['comment_count']."
+                                by ". $row['author']." ". $row['timestmp']."
                             </p>
                             <div class='thread-content'>
                                > ". $row['content']."
