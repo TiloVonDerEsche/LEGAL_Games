@@ -23,7 +23,7 @@
 			let turn = 0
 
 			//Die Modifier bestimmen die Änderung der Resourcen nach Rundenende
-			let goldModifier = 1 
+			let goldModifier = 1
 			let foodModifier = 1
 			let stoneModifier = 0
 			let woodModifier = 0
@@ -39,11 +39,11 @@
 			//Resourcen Anzeige
 
 			//-----------------------------------------------------
-			//---------------Resourcen
+			//---------------Spiel Resourcen Anzeige
 			//----------------------------------------------------
-			
+
 			//Besagte Resourcenanzeige mit Bildern zur Unterscheidung der Resourcen.
-			
+
 			var goldIcon = document.createElement("img")
 			goldIcon.src = "src/img/gold.png"
 			document.getElementById("Spielbrett").appendChild(goldIcon)
@@ -85,7 +85,7 @@
 			var woodLabel = document.createElement("Label");
 			woodLabel.innerHTML = wood+" "+"("+woodModifier+")";
 			document.getElementById("Spielbrett").appendChild(woodLabel);
-			woodLabel.id = "wood" 
+			woodLabel.id = "wood"
 			woodLabel.classList.add("resource");
 
 			var stoneIcon = document.createElement("img")
@@ -123,14 +123,14 @@
 
 			var turnLabel = document.createElement("Label");
 			turnLabel.innerHTML = "Year: " + turn+" ";
-			document.getElementById("Spielbrett").appendChild(populationLabel);
+			document.getElementById("Spielbrett").appendChild(turnLabel);
 			turnLabel.id = "turn"
 			turnLabel.classList.add("statistic");
 
 			//-----------------------------------------------------
 			//---------------Menü Button
 			//----------------------------------------------------
-			
+
 			var game_btn = document.createElement("button"); //Führt wieder zum Menü
 			game_btn.innerHTML = "Menu"
 			game_btn.classList.add("game-btn");
@@ -138,188 +138,168 @@
 			  location.href='index.html'
 			};
 			document.getElementById("Spielbrett").appendChild(game_btn);
-			
+
 			//-----------------------------------------------------
 			//---------------Convenience und Mapspawning
 			//----------------------------------------------------
 
 			//Beim ersten Laden ausgeführt:
 			window.addEventListener("contextmenu", e => e.preventDefault()); //deaktiviert das ContextMenu (kommt Standardweise beim Rechstklicken)
-			
+
 			window.addEventListener("keypress", (e) => {
 				if(e.keyCode == 32 && e.target === document.body) { //deaktiviert Scrollen bei Space-Druck
-					e.preventDefault();      
+					e.preventDefault();
 					endTurn();
 				}
 			})
-			
-			scoutForLand();													 //Deckt das erste Stück Land auf. (Erschafft das Spielfeld)																	
 
-			
-
+			scoutForLand();													 //Deckt das erste Stück Land auf. (Erschafft das Spielfeld)
 
 
 
 			//Deckt ein Stück(Seckseck aus Secksecken -> Magic) Land auf
-
 			function scoutForLand() {
-				
+
 				//Baut ein großes Sechseck aus 19 Sechsecken
 				var grid = document.createElement("DIV");
 				grid.id = "grid";
 				var column_3 = document.createElement("DIV"); //Reihe 1 mit 3 Secksecken
-				grid.appendChild(column_3);    
+				grid.appendChild(column_3);
 				column_3.id = "column-3";
-				
+
 				var column_4 = document.createElement("DIV"); //Reihe 2 mit 4 Secksecken
-				grid.appendChild(column_4);    
+				grid.appendChild(column_4);
 				column_4.id = "column-4"
-				
+
 				var column_5 = document.createElement("DIV"); //Reihe 3 mit 5 Secksecken
-				grid.appendChild(column_5);    
+				grid.appendChild(column_5);
 				column_5.id = "column-5";
-				
+
 				var column_4_0 = document.createElement("DIV"); //Reihe 4 mit 4 Secksecken
-				grid.appendChild(column_4_0);    
+				grid.appendChild(column_4_0);
 				column_4_0.id = "column-4-0";
 
-				
+
 				var column_3_0 = document.createElement("DIV"); //Reihe 5 mit 3 Secksecken
-				grid.appendChild(column_3_0);    
+				grid.appendChild(column_3_0);
 				column_3_0.id = "column-3-0";
-				
-				document.getElementById("Spielbrett").appendChild(grid);   
-				
+
+				document.getElementById("Spielbrett").appendChild(grid);
+
 				//siehe Oben(Seckseckanzahl der jeweiligen Reihen: 3,4,5,4,3)
 				for (let i = 0; i < 3; i++) {
-					buildHexagon("column-3");} 
-					
+					buildHexagon("column-3");}
+
 				for (let i = 0; i < 4; i++) {
 					buildHexagon("column-4");}
-					
+
 				for (let i = 0; i < 5; i++) {
 					buildHexagon("column-5");}
-					
+
 				for (let i = 0; i < 4; i++) {
 					buildHexagon("column-4-0");}
-					
+
 				for (let i = 0; i < 3; i++) {
 					buildHexagon("column-3-0");}
 			}
 
-			//Das jeweilige Hexagon wird zu einem Farmland 
+			//Das jeweilige Hexagon wird zu einem Farmland
 			//(erst kosmetisch; Diese Funktion wird von der Kauffunktion aufgerufen, die die tatsächlichen Resourcenberechnungen ändert.)
 			function convertIntoLand(pos) {
-				
-				
 				//Hexagon erfassen
-				
 				var hexagonTop = document.getElementById(pos).childNodes[0].childNodes;
 				var hexagonBottom = document.getElementById(pos).childNodes[1].childNodes;
 				hexagonTop[0].style.borderColor = "transparent yellow orange transparent";
 				hexagonTop[1].style.borderColor = "transparent transparent orange yellow";
-				
+
 				hexagonBottom[0].style.borderColor = "yellow orange transparent transparent";
 				hexagonBottom[1].style.borderColor = "yellow transparent transparent orange";
-				
-				
 				//border style verändern
 			}
-			
+
 			//Das jeweilige Hexagon wird zu einem Wald mit Förster
 			//(erst kosmetisch; Diese Funktion wird von der Kauffunktion aufgerufen, die die tatsächlichen Resourcenberechnungen ändert.)
 			function convertIntoForest(pos) {
-				
-				
 				//Hexagon erfassen
-				
 				var hexagonTop = document.getElementById(pos).childNodes[0].childNodes;
 				var hexagonBottom = document.getElementById(pos).childNodes[1].childNodes;
 				hexagonTop[0].style.borderColor = "transparent lightgreen darkgreen transparent";
 				hexagonTop[1].style.borderColor = "transparent transparent darkgreen lightgreen";
-				
+
 				hexagonBottom[0].style.borderColor = "lightgreen darkgreen transparent transparent";
 				hexagonBottom[1].style.borderColor = "lightgreen transparent transparent darkgreen";
-				
-				
 				//border style verändern
 			}
 
 			//Das jeweilige Hexagon wird zu einem arbeitetem Steinbruch
 			//(erst kosmetisch; Diese Funktion wird von der Kauffunktion aufgerufen, die die tatsächlichen Resourcenberechnungen ändert.)
 			function convertIntoQuarry(pos) {
-				
-				
 				//Hexagon erfassen
-				
 				var hexagonTop = document.getElementById(pos).childNodes[0].childNodes;
 				var hexagonBottom = document.getElementById(pos).childNodes[1].childNodes;
 				hexagonTop[0].style.borderColor = "transparent grey black transparent";
 				hexagonTop[1].style.borderColor = "transparent transparent black grey";
-				
+
 				hexagonBottom[0].style.borderColor = "grey black transparent transparent";
 				hexagonBottom[1].style.borderColor = "grey transparent transparent black";
-				
-				
 				//border style verändern
 			}
-			
+
 			//Das jeweilige Hexagon wird zu einem Wunder der Geschichte, welches ein Land so besonders macht, das es kulturell überleben wird und
 			//somit in gewisser Hinsicht für sich und seine kulturellen Anhänger gewonnen hat.
 			//(erst kosmetisch; Diese Funktion wird von der Kauffunktion aufgerufen, die die tatsächlichen Resourcenberechnungen ändert.)
 			function convertIntoWonder(pos) {
-				
 				var hexagonTop = document.getElementById(pos).childNodes[0].childNodes;
 				var hexagonBottom = document.getElementById(pos).childNodes[1].childNodes;
 				hexagonTop[0].style.borderColor = "transparent #f55d5d #bf1111 transparent";
 				hexagonTop[1].style.borderColor = "transparent transparent #bf1111 #f55d5d";
-				
+
 				hexagonBottom[0].style.borderColor = "#f55d5d #bf1111 transparent transparent";
 				hexagonBottom[1].style.borderColor = "#f55d5d transparent transparent #bf1111";
-				
+
 			}
 
 			//Hexagons sind die Bauteile des Spielfeldes und werden mit dieser Funktion erschaffen.
 			//Zudem werden in dieser Funktion EventHandler für jedes gespawnte Hexagon erschaffen, die nach einem Linksklick hören.
 			//Ganz unten im Programm werden Variablen Werte zugewiesen (siehe Zeile 638). Diese Variablen bestimmen den Baumodus, also welches
-            //Gebäude bei dem Fall eines Linksklickes erbaut wird.			
+            //Gebäude bei dem Fall eines Linksklickes erbaut wird.
 			function buildHexagon(column) {
-				
+
 				//Konstruiert ein Sechseck nach der üblichen im Internet populären Methode (4 Rechtecke mit Dreieckunterteilung)
 				var hexagon = document.createElement("DIV");
 				hexagon.classList.add("hexagon");
-				
+
 					var hexagon_top_row = document.createElement("DIV");
-					hexagon.appendChild(hexagon_top_row);  
-					hexagon_top_row.classList.add("hexagon-top-row");			
-					
+					hexagon.appendChild(hexagon_top_row);
+					hexagon_top_row.classList.add("hexagon-top-row");
+
 						var hexagon_left = document.createElement("DIV");
-						hexagon_top_row.appendChild(hexagon_left); 
-						hexagon_left.classList.add("left");			
-						
+						hexagon_top_row.appendChild(hexagon_left);
+						hexagon_left.classList.add("left");
+
 						var hexagon_right = document.createElement("DIV");
 						hexagon_top_row.appendChild(hexagon_right);
-						hexagon_right.classList.add("right");			
-					
-					var hexagon_bottom_row = document.createElement("DIV");
-					hexagon.appendChild(hexagon_bottom_row); 
-					hexagon_bottom_row.classList.add("hexagon-bottom-row");
-					
-						var hexagon_bottom_left = document.createElement("DIV");
-						hexagon_bottom_row.appendChild(hexagon_bottom_left); 
-						hexagon_bottom_left.classList.add("hexagon-bottom-left");
-						
-						var hexagon_bottom_right = document.createElement("DIV");
-						hexagon_bottom_row.appendChild(hexagon_bottom_right); 
-						hexagon_bottom_right.classList.add("hexagon-bottom-right");
-				
-				
+						hexagon_right.classList.add("right");
 
-				document.getElementById(column).appendChild(hexagon);  
-				
+					var hexagon_bottom_row = document.createElement("DIV");
+					hexagon.appendChild(hexagon_bottom_row);
+					hexagon_bottom_row.classList.add("hexagon-bottom-row");
+
+						var hexagon_bottom_left = document.createElement("DIV");
+						hexagon_bottom_row.appendChild(hexagon_bottom_left);
+						hexagon_bottom_left.classList.add("hexagon-bottom-left");
+
+						var hexagon_bottom_right = document.createElement("DIV");
+						hexagon_bottom_row.appendChild(hexagon_bottom_right);
+						hexagon_bottom_right.classList.add("hexagon-bottom-right");
+
+
+
+				document.getElementById(column).appendChild(hexagon);
+
 				//Zählt die Sechsecke je Reihe und weißt ihn Nummern zu um später geziehlt auf sie zu zugreifen zukönnen.
 				if(column == "column-3") { //Folie 2_1
-					column_3_Count ++; 
+					column_3_Count ++;
 					hexagon.id = "column-3_"+column_3_Count;
 				}
 				if(column == "column-4") {
@@ -337,9 +317,9 @@
 				if(column == "column-3-0") {
 					column_3_0_Count ++;
 					hexagon.id = "column-3-0_"+column_3_0_Count;
-				}	
-				
-				
+				}
+
+
 				hexagon.addEventListener("click", ()=>  //Folie 2_2
 				{
 					let id = hexagon.id;
@@ -360,84 +340,80 @@
 						buyWonder(id)
 					}
 				}) ;
-				
 
-				
-				
-				
-				
+
+
+
+
+
 			}
 
 			//inspiriert von: https://www.youtube.com/watch?v=vbcddulL-YM&ab_channel=SoySudhanshuCodes, jedoch nur die Ästhetik des Hauses(CSS) und nicht die Methode(JS).
 			function constructHouse(posHouse) {
-				
-				
-				
-			//Haus wird konstruiert   
-			var house = document.createElement("DIV");                 
-
+			//Haus wird konstruiert
+			var house = document.createElement("DIV");
 
 				var front = document.createElement("DIV");
-				house.appendChild(front);  
+				house.appendChild(front);
 
 					var roof = document.createElement("SPAN");
-					front.appendChild(roof); 
-					
+					front.appendChild(roof);
+
 					var triangle = document.createElement("SPAN");
-					front.appendChild(triangle); 
-					
+					front.appendChild(triangle);
+
 					var sidewall = document.createElement("SPAN");
-					front.appendChild(sidewall); 
-					
+					front.appendChild(sidewall);
+
 					var wall = document.createElement("DIV");
-					front.appendChild(wall);  
-					
+					front.appendChild(wall);
+
 						var top_window = document.createElement("SPAN");
 						wall.appendChild(top_window);
-						
+
 						var middle_window = document.createElement("SPAN");
 						wall.appendChild(middle_window);
-						
+
 						var door = document.createElement("SPAN");
 						wall.appendChild(door);
-						
+
 				var garage = document.createElement("DIV");
 				house.appendChild(garage);
-					
+
 					var roofGarage = document.createElement("SPAN");
 					garage.appendChild(roofGarage);
-					
+
 					var triangleGarage = document.createElement("SPAN");
 					garage.appendChild(triangleGarage);
-					
+
 					var sidewallGarage = document.createElement("SPAN");
 					garage.appendChild(sidewallGarage);
-					
+
 					var wallGarage = document.createElement("DIV");
 					garage.appendChild(wallGarage);
 
 
 				//Hausbauteile bekommen ihre IDs, nötig für die CSS stylierung
 				house.id = "house";
-				
+
 				front.id = "front";
 				roof.classList.add("roof");
 				triangle.classList.add("triangle");
 				sidewall.classList.add("sidewall");
-				
+
 				wall.classList.add("wall");
 				top_window.id = "top-window";
 				middle_window.id = "middle-window";
 				door.id = "door";
-				
+
 				garage.id = "garage";
 				roofGarage.classList.add("roof");
 				triangleGarage.classList.add("triangle");
 				sidewallGarage.classList.add("sidewall");
 				wallGarage.classList.add("wall");
-				
+
 				document.getElementById(posHouse).appendChild(house);
-				
+
 				house.style.transform = "translateY(-140px)";
 			}
 
@@ -449,32 +425,32 @@
 
 			function buildHouse(housePos) {
 				buyAmount = document.getElementById("buyAmount").value //buyAmount wird bei Ausführung d. F. immer neu geladen
-				
+
 				if(!buyAmount) //kein Wert im Input => * 1
 				{
 					buyAmount = 1
 				}
-				
+
 				if(gold >= 100 * buyAmount && wood >= 50 * buyAmount && stone >= 20 * buyAmount && buyAmount > 0) //<- Die Kosten des Gebäudes mal der Größe des Kaufes
 				{
 					gold -= 100 * buyAmount
 					wood -= 50 * buyAmount
 					stone -= 20 * buyAmount
 					popCap += 4 * buyAmount
-				
+
 					constructHouse(housePos)
-					
+
 					for (let i = 0 ; i < buyAmount; i++) {//pro gebautes Objekt vergeht eine Runde
 						endTurn();
 					}
 				}
-				
+
 				updateStats()
 			}
 
 			function buyLand(pos) {
 				buyAmount = document.getElementById("buyAmount").value
-				
+
 				if(!buyAmount) //kein Wert im Input => * 1
 				{
 					buyAmount = 1
@@ -483,9 +459,9 @@
 					land += 1 * buyAmount
 					foodModifier += 1 * buyAmount
 					gold -= 20 * buyAmount
-					
+
 					convertIntoLand(pos);
-					
+
 					for (let i = 0 ; i < buyAmount; i++) {//pro gebautes Objekt vergeht eine Runde
 						endTurn();
 					}
@@ -493,13 +469,13 @@
 				else {
 					document.getElementById("recentEvents").innerHTML += "Not enough Money! \n"
 				}
-				
+
 				updateStats()
 			}
 
 			function buyForest(pos) {
 				buyAmount = document.getElementById("buyAmount").value
-				
+
 				if(!buyAmount) //kein Wert im Input => * 1
 				{
 					buyAmount = 1
@@ -508,9 +484,9 @@
 					forest += 1 * buyAmount
 					woodModifier += 0.3 * buyAmount
 					gold -= 20 * buyAmount
-					
+
 					convertIntoForest(pos);
-					
+
 					for (let i = 0 ; i < buyAmount; i++) {//pro gebautes Objekt vergeht eine Runde
 						endTurn();
 					}
@@ -518,13 +494,13 @@
 				else {
 					document.getElementById("recentEvents").innerHTML += "Not enough Money! \n"
 				}
-				
+
 				updateStats()
 			}
 
 			function buyQuarry(pos) {
 				buyAmount = document.getElementById("buyAmount").value
-				
+
 				if(!buyAmount) //kein Wert im Input => * 1
 				{
 					buyAmount = 1
@@ -533,9 +509,9 @@
 					quarry += 1 * buyAmount
 					stoneModifier += 0.1 * buyAmount
 					gold -= 200 * buyAmount
-					
+
 					convertIntoQuarry(pos);
-					
+
 					for (let i = 0 ; i < buyAmount; i++) {//pro gebautes Objekt vergeht eine Runde
 						endTurn();
 					}
@@ -543,13 +519,13 @@
 				else {
 					document.getElementById("recentEvents").innerHTML += "Not enough Money! \n"
 				}
-				
+
 				updateStats()
 			}
-			
+
 			function buyWonder(pos) {
 				buyAmount = document.getElementById("buyAmount").value
-				
+
 				if(!buyAmount) //kein Wert im Input => * 1
 				{
 					buyAmount = 1
@@ -565,9 +541,9 @@
 					woodModifier += 30 * buyAmount
 					stoneModifier += 20 * buyAmount
 					popCap += 1000 * buyAmount
-					
+
 					convertIntoWonder(pos);
-					
+
 					for (let i = 0 ; i < buyAmount; i++) {//pro gebautes Objekt vergeht eine Runde
 						endTurn();
 					}
@@ -575,17 +551,17 @@
 				else {
 					document.getElementById("recentEvents").innerHTML += "Not enough Money! \n"
 				}
-				
+
 				updateStats()
 			}
 
-			function endTurn() { 
+			function endTurn() {
 				turn++
-				
+
 				collectResources() //Berechne die Resourcen Veränderung
 				updateStats()      //Lade alle Labels neu (sichtbare Resourcenwerte)
-				checkWin()	
-				
+				checkWin()
+
 				document.getElementById("recentEvents").innerHTML = "" //eventLog wird gecleart
 			}
 
@@ -600,21 +576,21 @@
 					goldModifier += populationModifier
 				}
 				if(food < 1) {
-					
+
 					document.getElementById("recentEvents").innerHTML = "Your People are starving! \n"
-					
+
 					if(population > 0){
-						population--	 
+						population--
 					}
-					
+
 					populationModifier = 0
 					food = 0
-					
-					
-					
+
+
+
 					if(population == 0) {
 						//GAME OVER!
-				
+
 						alert("All of your people are in the ground! You lost.")
 					}
 				}
@@ -642,13 +618,13 @@
 			function checkWin() {
 				if(wonder === 1) {
 					alert("Ihr seid Siegreich Mylord!")
-					
+
 					wonder++
 				}
 			}
-			
 
-			//Die buy__Modes bestimmen das gebaute Gebäude nach einem Linksklick 
+
+			//Die buy__Modes bestimmen das gebaute Gebäude nach einem Linksklick
 			function buyHouseMode() { //Folie 2_2_1
 				buyHouseM = true
 				buyLandM = false

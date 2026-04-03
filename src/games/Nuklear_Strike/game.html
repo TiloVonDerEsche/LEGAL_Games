@@ -5,15 +5,7 @@
 		<link rel="stylesheet" href="src/CSS/style.css">
 	</head>
 	<body>
-		<!--------------------------------------------------
-		-------------User Tools (obere Leiste)
-		--------------------------------------------------->
-		<button onclick="scoutForLand()">Explore</button>
-		<input type="number" placeholder="buy amount" id="buyAmount">
-		<br>
 
-		<textarea rows="2" cols="30" id="recentEvents"></textarea>
-		<br>
 
 
 		<!--------------------------------------------------
@@ -21,9 +13,18 @@
 		--------------------------------------------------->
 		<div id="Spielbrett">
 
-			<script src="src/JS/main.js">
-			</script>
+			<!--------------------------------------------------
+			-------------User Tools
+			--------------------------------------------------->
+			<button onclick="scoutForLand()">Explore</button>
+			<input type="number" placeholder="buy amount" id="buyAmount">
+			<br>
 
+			<textarea rows="2" cols="30" id="recentEvents"></textarea>
+			<br>
+
+			<!--Game Logic -->
+			<script src="src/JS/main.js"></script>
 
 			<footer>
 				<button onclick="endTurn()" id="endTurn-btn">End your Turn</button>
