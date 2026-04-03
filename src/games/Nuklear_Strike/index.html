@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NuklearStrike</title>
+		<link rel="stylesheet" href="src/CSS/style.css">
+	</head>
+	<body>
+
+
+		<!--------------------------------------------------										
+		-------------Hauptmenü
+		--------------------------------------------------->
+		<div class="background">
+			<label class="menu-title">Nuklear Strike</label> <br>
+			
+			<div class="menu-animations">
+				<div class="house-menu">
+					<div id="front">
+						<span class="roof"></span>
+						<span class="triangle"></span>
+						<span class="sidewall"></span>
+						<div class="wall">
+							<span id="top-window"></span>
+							<span id="middle-window"></span>
+							<span id="door"></span>
+						</div>
+					</div>
+					<div id="garage">
+						<span class="roof"></span>
+						<span class="triangle"></span>
+						<span class="sidewall"></span>
+						<div class="wall"></div>
+					</div>
+				</div>
+				
+				<!--Feld-->
+				<div class="hexagon" id="feldProp-menu"  style="margin:50px 0 0 0">
+					<div class="hexagon-top-row">
+						<div class="f-left"></div>
+						<div class="f-right"></div>
+					</div>
+					<div class="hexagon-bottom-row">
+						<div class="f-bottom-left"></div>
+						<div class="f-bottom-right"></div>
+					</div>
+				</div>
+				
+				<!-- Forester -->
+				<div class="hexagon" id="foresterProp-menu">
+					<div class="hexagon-top-row">
+						<div class="for-left"></div> <!--"for" steht hier für Forest-->
+						<div class="for-right"></div>
+					</div>
+					<div class="hexagon-bottom-row">
+						<div class="for-bottom-left"></div>
+						<div class="for-bottom-right"></div>
+					</div>
+				</div>
+
+				<!-- Quarry -->
+				<div class="hexagon" id="quarryProp-menu">
+					<div class="hexagon-top-row">
+						<div class="qua-left"></div> <!--"qua" steht hier für Quarry-->
+						<div class="qua-right"></div>
+					</div>
+					<div class="hexagon-bottom-row">
+						<div class="qua-bottom-left"></div>
+						<div class="qua-bottom-right"></div>
+					</div>
+				</div>
+			
+				<div class="hexagon" id="wonderProp-menu">
+					<div class="hexagon-top-row">
+						<div class="won-left"></div> <!--"won" steht hier für Wonder-->
+						<div class="won-right"></div>
+					</div>
+					<div class="hexagon-bottom-row">
+						<div class="won-bottom-left"></div>
+						<div class="won-bottom-right"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="menu-btn-container">
+				<button class="menu-btn" onclick="location.href='game.html'">Spielen</button> <br>
+				<button class="menu-btn" onclick="location.href='tut.html'">Tutorial</button> <br>
+				<button class="menu-btn" onclick="location.href='credits.html'">Credits</button> <br>
+			</div>
+		</div>
+	</body>
+</html>

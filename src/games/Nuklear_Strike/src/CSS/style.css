@@ -1,0 +1,484 @@
+/*--------------------------------------
+			-		      Allgemein
+			---------------------------------------*/
+			body {
+				background: #24252a;
+				align-content: center;
+			}
+
+			/*--------------------------------------
+			-		    Hauptmenü
+			---------------------------------------*/
+			.background, .tut-background {
+				width: 1250px;
+				background-color: #1c1715;
+				margin: 2vh 0 0 18vw;
+			}
+			
+			.menu-title {
+				color: #ede9e4;
+				font-size: 7em;
+				margin: 0 0 0 300px ;
+			}
+			
+			.menu-btn {
+				background-color: #63493f;
+				border-radius: 5px;	
+				padding: 0px;
+				margin: 30px 420px;
+				font-size: xx-large;
+				height: 150px;
+				width: 400px;
+			}
+			
+			.menu-btn-container {
+				margin:  200px 0 -400px 0;
+			}
+			
+			.menu-animations {
+				display: flex;
+				margin: 0 0 0 160px;
+			}
+			
+			.house-menu {
+				display: flex;
+				flex-direction: row-reverse;
+				align-items: flex-end;
+				
+				animation: spin5 3s infinite linear;
+				
+				transform-origin: 60% 100%;
+			}
+			
+			#feldProp-menu, #foresterProp-menu, #quarryProp-menu, #wonderProp-menu {
+				transform-origin: 26% 30%;
+				width: 256px;
+				height: 256px;
+			}
+			
+			#feldProp-menu {
+				animation: spin1 3s infinite linear;
+			}
+			
+			#foresterProp-menu{
+				animation: spin2 3s infinite linear;
+			}
+			#quarryProp-menu{
+				animation: spin3 3s infinite linear;
+			}
+			#wonderProp-menu{
+				animation: spin4 3s infinite linear;
+			}
+			
+			@-webkit-keyframes spin1{
+				0% { -webkit-transform: rotate(0deg);}
+				100% { -webkit-transform: rotate(360deg);}
+			}
+			
+			@-webkit-keyframes spin2{
+				0% { -webkit-transform: rotate(0deg);}
+				100% { -webkit-transform: rotate(360deg);}
+			}
+			
+			@-webkit-keyframes spin3{
+				0% { -webkit-transform: rotate(0deg);}
+				100% { -webkit-transform: rotate(360deg);}
+			}
+			
+			@-webkit-keyframes spin4{
+				0% { -webkit-transform: rotate(0deg);}
+				100% { -webkit-transform: rotate(360deg);}
+			}
+			
+			@-webkit-keyframes spin5{
+				0% { -webkit-transform: rotate(0deg);}
+				100% { -webkit-transform: rotate(360deg);}
+			}
+			
+			
+			
+			
+			/*--------------------------------------
+			-		    Tutorial & Credits
+			---------------------------------------*/
+			.tut-helpful {
+				display: flex;
+			}
+			
+			
+			.tut-des {
+				margin: 50px 0 0 0;
+			}
+			
+			.tut-tips {
+				padding: 50px;
+				text-align: center;
+			}
+			
+			.tut-btn, .credit-btn, .game-btn {
+				background-color: #63493f;
+				border-radius: 5px;	
+				padding: 0px;
+				font-size: xx-large;
+				height: 75px;
+				width: 200px;
+			}
+			
+			.game-btn {
+				margin: 10px 0 0 320px;
+				position: absolute;
+			}
+			
+			.tut-lbl, .tut-lbl1 , .credit-text {
+				font-size: xx-large;
+				color: #ede9e4;
+			}
+			
+			.tut-btn:hover,  .menu-btn:hover {
+				opacity: 50%;
+			}
+			
+			.credit-text {
+				text-align: center;
+			}
+			
+			.credit-studio {
+				font-size: 2.5em;
+			}
+			
+			.tut-btn {
+				margin: 0 0 0 1040px;
+			}
+			
+			.credit-btn {
+				margin: 270px 0 0 1040px;
+			}
+		
+			
+			
+			/*--------------------------------------
+			-		    Spielbrett
+			---------------------------------------*/
+			#Spielbrett {
+				width: 1250px;
+				background-color: #1c1715;
+				margin: 0 0 0 18vw;
+			}
+
+			footer {
+				display:flex;
+			}
+
+			#endTurn-btn {
+				background-color: #734836;
+				border-radius: 50px;	
+				color: #ffd4d4;
+				padding: 0 0;
+				margin: 0 0;
+				font-size: xx-large;
+			}
+
+			#endTurn-btn:hover {
+				opacity: 50%;
+			}
+
+			/*----------------------------------
+			-		buildingSelectContainer
+			-----------------------------------*/
+			.buildingSelectContainer {
+				width: 950px;
+				height: 170px;
+				background-color: #45332c;
+				margin: 0 0 0 35px;
+				display: flex;
+			}
+
+			.buildingBox {
+				width: 170px;
+				height: 160px;
+				background-color: #63493f;
+				margin: 5px 10px;
+			}
+
+			.buildingBox:hover {
+				opacity: 50%;
+			}
+
+			.buildingBox:single-button {
+				opacity: 150%;
+			}
+
+			.costLabel {
+				color: black;
+			}
+
+			/*--------------------------------------
+			-		      Schriftzüge
+			---------------------------------------*/
+			.resource, .statistic {
+				color: red;
+				font-size: xx-large;
+			}
+
+
+			#gameOverLabel {
+				color: red;
+				font-size: xx-large;
+			}
+
+			/*----------------------------------
+			-		    gameBoard
+			-----------------------------------*/
+			#grid {
+				margin: 30px 230px;   /*Zuhause: 25px 31.5vw, Schule: unknown*/
+				display: flex;
+				align-items: flex-start;
+
+			}
+
+			#column-3, #column-3-0 {
+				margin: 176px 0 0 0;
+			}
+
+			#column-4, #column-4-0 {
+				margin: 88px -48px 0 -48px;
+			}
+
+		
+			/*----------------------------------
+			-		       Props
+			-----------------------------------*/
+
+
+			/*----------------------------------
+			-		      Hexagon
+			-----------------------------------*/
+
+			.hexagon {
+			padding: 2px 0 2px 0;
+			}
+
+			.hexagon:hover {
+				opacity: 50%;
+			}
+
+			.hexagon-top-row, .hexagon-bottom-row {
+				display: flex;
+			}
+			.left, .right {
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 50px 86px 50px;
+
+			}
+
+			.left {
+				border-color: transparent #0eeb15 #0ec414 transparent;
+			}
+
+			.right {
+				border-color: transparent transparent #0ec414 #0eeb15;
+			}
+
+			.hexagon-bottom-left, .hexagon-bottom-right {
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 86px 50px 0 50px;
+			}
+			.hexagon-bottom-left {
+				border-color: #0eeb15 #0ec414 transparent transparent;
+			}
+
+			.hexagon-bottom-right {
+				border-color: #0eeb15 transparent transparent #0ec414;
+			}
+
+			/*----------------------------------
+			-		       Feld
+			-----------------------------------*/
+
+			#feldProp, #foresterProp, #quarryProp, #wonderProp {
+				padding: 1px 0 1px 0;
+				margin: 10px 10px 0 10px;
+			}
+
+
+			.f-left, .f-right, .for-left, .for-right, .qua-left, .qua-right, .won-left, .won-right  {
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 37.5px 64.5px 37.5px;
+
+			}
+
+			.f-left {
+				border-color: transparent yellow orange transparent;
+			}
+
+			.f-right {
+				border-color: transparent transparent orange yellow;
+			}
+
+			.f-bottom-left, .f-bottom-right, .for-bottom-left, .for-bottom-right, .qua-bottom-left, .qua-bottom-right, .won-bottom-left, .won-bottom-right {
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 64.5px 37.5px 0 37.5px;
+			}
+			.f-bottom-left {
+				border-color: yellow orange transparent transparent;
+			}
+
+			.f-bottom-right {
+				border-color: yellow transparent transparent orange;
+			}
+
+			/*----------------------------------
+			-		       Forester
+			-----------------------------------*/
+
+			.for-left {
+				border-color: transparent lightgreen darkgreen transparent;
+			}
+
+			.for-right {
+				border-color: transparent transparent darkgreen lightgreen;
+			}
+
+			.for-bottom-left {
+				border-color: lightgreen darkgreen transparent transparent;
+			}
+
+			.for-bottom-right {
+				border-color: lightgreen transparent transparent darkgreen;
+			}
+
+
+			/*----------------------------------
+			-		       Quarry
+			-----------------------------------*/
+
+			.qua-left {
+				border-color: transparent grey black transparent;
+			}
+
+			.qua-right {
+				border-color: transparent transparent black grey;
+			}
+
+			.qua-bottom-left {
+				border-color: grey black transparent transparent;
+			}
+
+			.qua-bottom-right {
+				border-color: grey transparent transparent black;
+			}
+			
+			/*----------------------------------
+			-		       Wonder
+			-----------------------------------*/
+
+			.won-left {
+				border-color: transparent #f55d5d #bf1111 transparent;
+			}
+
+			.won-right {
+				border-color: transparent transparent #bf1111 #f55d5d;
+			}
+
+			.won-bottom-left {
+				border-color: #f55d5d #bf1111 transparent transparent;
+			}
+
+			.won-bottom-right {
+				border-color: #f55d5d transparent transparent #bf1111;
+			}
+
+
+			/*----------------------------------
+			-		House-Construction
+			-----------------------------------*/
+			#house{
+				display: flex;
+				flex-direction: row-reverse;
+				align-items: flex-end;
+				position: absolute;
+			}
+			#front {
+				height:100px;
+				width:100px;
+				display: grid;
+				grid-template-columns: 2fr 3fr;
+				grid-template-rows: 2fr 3fr;
+			}
+			.wall {
+				background: white;
+			}
+			.roof {
+				background: red;
+			}
+			.sidewall {
+				background: rgb(240,240,240);
+			}
+			#front .triangle{
+				border-bottom: 40px solid white;
+				border-left: 30px solid transparent;
+				border-right: 30px solid transparent;
+			}
+
+			#front .roof{
+				transform: skewX(-37deg) translateX(38%);
+			}
+			#garage {
+				display: grid;
+				height: 45px;
+				width: 40px;
+				grid-template-columns: 3fr 2fr;
+				grid-template-rows: 1.5fr 3fr;
+				transform: translateX(40%);
+			}
+			#garage .triangle {
+				border-bottom: 15px solid white;
+				border-left: 16px solid transparent;
+			}
+			#garage .roof{
+				transform: skewX(-47deg) translateX(34%);
+			}
+			#top-window{
+				width:12.5px;
+				height:12.5px;
+				display: inline-block;
+				background: lightblue;
+				border-radius: 100%;
+				transform: translateY(-180%);
+			}
+
+			#middle-window{
+				display: flex;
+				justify-content: space-around;
+				width: 100%;
+			}
+			#middle-window:after, #middle-window:before{
+				content: '';
+				display: inline-block;
+				height:12.5px;
+				width:12.5px;
+				background: lightblue;
+			}
+			#door{
+				content: '';
+				display: inline-block;
+				height: 20px;
+				width: 12.5px;
+				background: linear-gradient(yellow,orange);
+				border-top-left-radius: 12.5px;
+				border-top-right-radius: 12.5px;
+				transform: translateY(75%);
+			}
+			#front .wall{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}

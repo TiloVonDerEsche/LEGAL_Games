@@ -1,0 +1,100 @@
+	/*******************************************************
+	*                  Thread-Container
+	*******************************************************/
+
+	div.header{
+		padding: 1vmin 0 0 0;
+	}
+	.title {
+		color: black;
+		text-align: left;
+	}
+
+	h1, h4, ol {
+		margin: 0;
+	}
+	p {
+		margin: 5px 0;
+		margin-right: 5px;
+	}
+	.top-bar {
+		background-color: skyblue;
+		padding: 5px 0 5px 20px;
+		margin-top: 6vmin;	/*Verschiebt die ganze Forum Seite nach unten*/
+		display: flex;
+	}
+	.main {
+		background-color: #f6f6ef;
+		padding: 10px 40px;
+	}
+
+	.forumRow {
+		list-style-type: none;
+		background-color: #f6f6df;
+	}
+
+	/*******************************************************
+	*                 Thread-itself
+	*******************************************************/
+
+	.title {
+		font-size: smaller;
+	}
+
+	.t-description {
+		font-size: x-small;
+		padding-right: 10px;
+		text-decoration: none;
+		color: black;
+	}
+
+	.thread-content {
+		font-size: small;
+		text-decoration: none;
+		color: black;
+	}
+
+	/*******************************************************
+	*                  Buttons
+	*******************************************************/
+	.postThreadBtn {
+		background-color: white;
+		color: black;
+		border-style: double;
+		position: absolute;
+		right: 10px;
+		top: 120px;
+	}
+
+	/*******************************************************
+	*                  Forum-Comments
+	*******************************************************/
+	.comments {
+		margin: 40px 0;
+	}
+	.comment {
+		margin: 10px 0;
+	}
+	.forumRow {
+		padding: 5px 0;
+	}
+	.bottom, .top-comment {
+		display: flex;
+		color: grey;
+		font-size: 12px;
+	}
+	.commentBtn {
+		display: block;
+		margin: 10px 0;
+	}
+
+	.writeCommentField {
+		width: 36vmin;
+	}
+
+	.addCommentField input {
+		width: 48vmin;
+		height: 12vmin;
+	}
+
+	/*margin-bottom bei addCommentAuthor / margin-top bei addCommentButton*/
