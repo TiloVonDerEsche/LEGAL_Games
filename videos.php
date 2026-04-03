@@ -22,9 +22,9 @@ include("header.php");
 <div class="main">
 
     <?php
-        chdir(__DIR__ . '/src/bin');
-        $output = shell_exec('./generate_track_list.bin');
-        echo "<pre>$output</pre>";
+        //chdir(__DIR__ . '/src/bin');
+        //$output = shell_exec('./generate_track_list.bin');
+        //echo "<pre>$output</pre>";
         //$output = shell_exec('./3d_track_visualizer.bin');
         //echo "<pre>$output</pre>";
     ?>

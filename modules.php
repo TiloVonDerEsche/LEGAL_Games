@@ -12,7 +12,7 @@
 			<div class="topnav">
 				<a href="index.php" class="active" >Home</a>
 				<div class="dropdown">
-					<button class="dropbtn">Games </button>
+					<button class="dropbtn" href="game_list.php">Games</button>
 					<div class="dropdown-content">
 						<a href="snake.php">Snek</a>
 						<a href="tetris.php">Tetris</a>
