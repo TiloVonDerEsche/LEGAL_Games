@@ -10,8 +10,8 @@ include("header.php");
 	<h1>Choose a game to your liking</h1>
 </div>
 
-<div class="row">   <!--linke Spalte des Grids-->
-	<div class="column">
+<div class="row">
+	<div class="column"> <!--linke Spalte des Grids-->
 		<div class="container"> <!--Der Container für das Bild und den Text des Spiels-->
 			<a href="snake.php"><img src="src/images/games/snake0.png"></a> <!-- Link zum Spiel und Bild des Spiels-->
 			<div class="gametext">Snek</div>
@@ -19,6 +19,10 @@ include("header.php");
 		<div class="container"> <!--Der Container für das Bild und den Text des Spiels-->
 			<a href="tetris.php"><img src="src/images/games/tetris0.png"></a> <!-- Link zum Spiel und Bild des Spiels-->
 			<div class="gametext">Attack of the Tetrominoes</div>
+		</div>
+		<div class="container"> <!--Der Container für das Bild und den Text des Spiels-->
+			<a href="nuklear_strike.php"><img src="src/images/games/nuklear.png"></a> <!-- Link zum Spiel und Bild des Spiels-->
+			<div class="gametext">Nuklear Strike</div>
 		</div>
 
 

@@ -16,6 +16,7 @@
 					<div class="dropdown-content">
 						<a href="snake.php">Snek</a>
 						<a href="tetris.php">Tetris</a>
+						<a href="nuklear_strike.php">Nuklear Strike</a>
 						<a href="doom.php">DOOM</a>
 						<a href="mrboom.php">MrBoom30</a>
 						<a href="game_list.php">Other</a>
