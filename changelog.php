@@ -27,9 +27,9 @@ include("header.php");
 
         <br>
         <br>
-        <p>Kommende Changelogs: </p>
+        <p>ToDo: </p>
         <ol>
-            <li> Javascript DOOM in LEGAL_Games implementieren </li>
+            <li> Make Banner invisible on mobile. -> Quick Fix to stop obstructing the NavBar </li>
         </ol>
     </div>
 </div>
