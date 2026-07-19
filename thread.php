@@ -1,6 +1,15 @@
 <?php
 include("header.php");
 include "db_connect.php";
+include "add_comment.php";
+
+$t_id = isset($_GET['t_id']) ? intval($_GET['t_id']) : 0;
+
+if (isset($_GET['commentContent']) && isset($_GET['commentAuthor']) && $t_id > 0) {
+    addComment($conn, $t_id, $_GET['commentContent'], $_GET['commentAuthor']);
+    header("Location: thread.php?t_id=" . $t_id);
+    exit;
+}
 ?>
 
 
@@ -17,7 +26,7 @@ include "db_connect.php";
 
 <div class="main">
       <div class="writeCommentField">
-          <form action="add_comment.php" method="get">
+          <form action="thread.php" method="get">
           <input type="hidden" name="t_id" value="<?php echo $_GET['t_id']; ?>">
 
           <div class="addCommentField">
