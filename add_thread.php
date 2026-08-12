@@ -10,11 +10,11 @@
  */
 
  function addThread($conn, $thread_title, $thread_content, $thread_author) {
-    $sql = "INSERT INTO threads (title, content, author, comment_count) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO threads (title, content, author, comment_count) VALUES (?, ?, ?, 0)";
     $stmt = $conn->prepare($sql);
 
     if ($stmt) {
-        $stmt->bind_param("sssi", $thread_title, $thread_content, $thread_author, 0);
+        $stmt->bind_param("sss", $thread_title, $thread_content, $thread_author);
         $result = $stmt->execute();
         $stmt->close();
         return $result;
