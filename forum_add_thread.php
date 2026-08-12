@@ -5,7 +5,7 @@ include "add_thread.php";
 
 if (isset($_GET['threadTitle']) && isset($_GET['threadContent'])
     && isset($_GET['threadAuthor'])) {
-    addComment($conn, $_GET['threadTitle'], $_GET['threadContent'],
+    addThread($conn, $_GET['threadTitle'], $_GET['threadContent'],
                       $_GET['threadAuthor']);
     header("Location: forum.php");
     exit;
