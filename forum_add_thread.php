@@ -1,5 +1,16 @@
 <?php
 include("header.php");
+include "db_connect.php";
+include "add_thread.php";
+
+if (isset($_GET['threadTitle']) && isset($_GET['threadContent'])
+    && isset($_GET['threadAuthor'])) {
+    addComment($conn, $_GET['threadTitle'], $_GET['threadContent'],
+                      $_GET['threadAuthor']);
+    header("Location: forum.php");
+    exit;
+}
+
 ?>
 
 
@@ -23,7 +34,7 @@ include("header.php");
 
 <div class="writeCommentField">
         <div class="addCommentAuthor">
-            <form action="add_thread.php">          <!--Bei Submit öffne add_comment.php-->
+            <form action="forum_add_thread.php">          <!--Bei Submit öffne add_comment.php-->
             <br> <label> Enter your title here: </label> <br> <!--Comment goes here-->
             <input type="text" name="threadTitle"><br>
         </div>
