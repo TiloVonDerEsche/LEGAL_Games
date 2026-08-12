@@ -5,14 +5,14 @@
 
 <div class='impressum'><h1>Impressum</h1><p>Angaben gemäß § 5 TMG</p>
 
-<meta charset="UTF-8"> 
+<meta charset="UTF-8">
 
 
-<p>Diese Internet-Seite wurde im Rahmen des Schulunterrichts von Tilo von Eschwege erstellt und dient ausschließlich der Ausbildung der Schülerinnen und Schüler. Diese Web-Seite verfolgt keine kommerziellen Zwecke. Sollten Inhalte einen anderen Eindruck erwecken, so ist dies nicht im Sinne der Web-Seite. 
+<p>Diese Internet-Seite wurde im Rahmen des Schulunterrichts von Tilo von Eschwege erstellt und dient ausschließlich der Ausbildung der Schülerinnen und Schüler. Diese Web-Seite verfolgt keine kommerziellen Zwecke. Sollten Inhalte einen anderen Eindruck erwecken, so ist dies nicht im Sinne der Web-Seite.
 Die Inhalte werden regelmäßig von der ausbildenden Lehrkraft überwacht.Eine permanente inhaltliche Kontrolle der Inhalte ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
-<p>Gymnasium Harksheide <br> 
-Falkenbergstrasse 25<br> 
-22844 Norderstedt <br> 
+<p>Gymnasium Harksheide <br>
+Falkenbergstrasse 25<br>
+22844 Norderstedt <br>
 </p><p> <strong>Vertreten durch: </strong><br>
 Marco Tylkowski<br>
 </p><p><strong>Kontakt:</strong> <br>
@@ -24,7 +24,6 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
 Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. <br>
 Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. <br>
 Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br>
-</p><br> 
+</p><br>
 Website Impressum erstellt durch <a href="http://www.impressum-generator.de">impressum-generator.de</a> von der <a href="http://www.kanzlei-hasselbach.de/" rel="nofollow">Kanzlei Hasselbach</a>
  </div>
- 

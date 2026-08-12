@@ -1,19 +1,4 @@
 <?php
-
-/*
-include "db_connect.php";
-$thread_id = $_GET["t_id"]; ;
-$comment_content = $_GET["commentContent"];
-$comment_author = $_GET["commentAuthor"];
-
-
-echo "<h2>Trying to add a new Comment: $comment_content => $comment_author </h2>";
-$sql = "INSERT INTO comments (thread_id, content, author)
- VALUES ('$thread_id', '$comment_content', '$comment_author')";
-$result = $conn->query($sql) or die(mysqli_error());
-
-include "search_all_comments.php";*/
-
 /**
  * Fügt einen neuen Kommentar sicher in die Datenbank ein.
  *
@@ -36,7 +21,23 @@ include "search_all_comments.php";*/
         return $result;
     }
     return false;
-} /*
+}
+
+/*
+include "db_connect.php";
+$thread_id = $_GET["t_id"]; ;
+$comment_content = $_GET["commentContent"];
+$comment_author = $_GET["commentAuthor"];
+
+
+echo "<h2>Trying to add a new Comment: $comment_content => $comment_author </h2>";
+$sql = "INSERT INTO comments (thread_id, content, author)
+ VALUES ('$thread_id', '$comment_content', '$comment_author')";
+$result = $conn->query($sql) or die(mysqli_error());
+
+include "search_all_comments.php";*/
+
+/*
 function addComment($conn, $thread_id, $comment_content, $comment_author) {
     echo "<h2>Trying to add a new Comment: " . htmlspecialchars($comment_content) . " => " . htmlspecialchars($comment_author) . " </h2>";
 
@@ -61,6 +62,5 @@ function addComment($conn, $thread_id, $comment_content, $comment_author) {
     $stmt->close();
     return $result;
 }*/
-
 
 ?>

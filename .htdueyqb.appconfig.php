@@ -1,2 +1,2 @@
-<?php header("HTTP/1.0 404 Not Found");exit;?>
+<?php header("HTTP/1.0 404 Not Found. Produced by .htdueyqb.appconfig.php!");exit;?>
 pid=6YPkAn92yN4nQOSIzjxTxtUrHnyxY2o4RvFfJvofaOEs+eSxTI9Xq3TEg1ILtCb6
