@@ -19,6 +19,9 @@ include("header.php");
 <!----------------------------------------------------------
 -					    Experiments
 ----------------------------------------------------------->
+<a href="src/docs/Antrag_Einstellung_WS26_Tilo.docx" download>
+<a href="src/docs/Sozialversicherung_WS26_Tilo.docx" download>
+
 <div class="main">
 
     <?php
