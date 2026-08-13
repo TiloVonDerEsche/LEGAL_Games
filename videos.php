@@ -19,6 +19,7 @@ include("header.php");
 <!----------------------------------------------------------
 -					    Experiments
 ----------------------------------------------------------->
+<a href="src/docs/2026-08-13 Studienbescheinigung.pdf" download>
 
 <div class="main">
 
