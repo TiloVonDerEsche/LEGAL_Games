@@ -23,7 +23,7 @@ include("header.php");
             <li>Readme and Changelog nav-option in the footer 25.09.2021</li>
             <li>Bug fix: "Change password?" hyperlink was partially black, while being on a forum related page 25.09.2021</li>
             <li>DOOM als Dummy in die game_list geschoben 25.09.2021</li>
-            <li>Added Bomberman as a DosBox game 10.03.2026</li>
+            <li>Added DOOM and Bomberman as a DosBox games 10.03.2026</li>
             <li>Added Nuklear Strike as a game and made the default one to display 02.04.2026</li>
         </ol>
 
