@@ -32,7 +32,7 @@ include("header.php");
         <p>ToDo: </p>
         <ol>
             <li> Make Banner invisible on mobile. -> Quick Fix to stop obstructing the NavBar </li>
-            <li> When reloading add_comment.php the comment should not be posted a second time</li>
+            <li> Allow proper zooming on Mobile Site Version.</li>
             <li>Sanitize the comment/thread content before putting it in the DB / on the page, to prevent users to DOS a thread by redirecting them on page content load. Replace IMG html hack with a proper way to post an image / gif by providing its url</li>
         </ol>
     </div>
