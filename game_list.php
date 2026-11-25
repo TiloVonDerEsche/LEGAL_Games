@@ -41,7 +41,7 @@ include("header.php");
 			<div class="gametext">COOP Nexus Realm v0.11</div>
 		</div>
                 <div class="container"> <!--Der Container für das Bild und den Text des Spiels-->
-                        <a href="src/games/Nexus_Realm/nexus-realm-v248_CreLeaAdventure.html"><img src="src/images/games/Nexuss/Nexus_Realm_v248.png" width="225" height="140.625"></a>
+                        <a href="src/games/Nexus_Realm/nexus-realm-v248_CreLeaAdventure.html"><img src="src/images/games/Nexus_Realm_v248.png" width="225" height="140.625"></a>
                         <div class="gametext">Nexus Realm v2.48</div>
                 </div>
 
